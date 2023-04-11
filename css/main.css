@@ -219,5 +219,13 @@ transition: .5s ease;
   border-right: 384px solid var(--main-color);
   border-bottom: 384px solid var(--main-color);
   border-left: 384px solid transparent;
+}
+
+.home-img img{
+  position: absolute;
+  bottom: 0;
+  right: -15rem;
+  width: 60%;
+  pointer-events: none;
 
 }
