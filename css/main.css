@@ -18,7 +18,7 @@ html{
 }
 
 body{
-  background-color: var(--bg-color);
+  background: var(--bg-color);
   color: var(--text-color);
   cursor: pointer;
 }
@@ -44,7 +44,7 @@ body{
   transition: .5s;
 }
 
-.header .sticky{
+.header.sticky{
   background: var(--bg-color);
   box-shadow: 0 .1rem 1rem var(--shadow-color);
 }
@@ -65,7 +65,15 @@ body{
   margin-right: 3.5rem;
 }
 
-.navbar a::before{
+.header.sticky .navbar a{
+  color: var(--text-color);
+}
+
+.header.sticky .navbar a.active{
+  color: var(--main-color);
+}
+
+.navbar a.active::before{
   content: "";
   position: absolute;
   left: 0;
@@ -75,10 +83,20 @@ body{
   background: var(--white-color);
 }
 
+.header.sticky .navbar a::before{
+  background: var(--main-color);
+  opacity: .7;
+}
+
 #darkMode-icon{
   cursor: pointer;
   font-size: 2.4rem;
   color: var(--white-color);
+}
+
+.header.sticky #darkMode-icon{
+  color: var(--text-color);
+  opacity: .9;
 }
 
 section{
@@ -235,7 +253,7 @@ transition: .5s ease;
   pointer-events: none;
 }
 
-/**************ABOUT SECTION************************/
+/*******************ABOUT SECTION****************************/
 span{
   color: var(--main-color);
 }
