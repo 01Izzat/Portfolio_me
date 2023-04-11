@@ -341,3 +341,19 @@ span{
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
 }
+
+/*******************PORTFOLIO SECTION****************************/
+.portfolio{
+  padding-bottom: 10rem;
+}
+
+.portfolio h2 {
+  margin-bottom: 4rem;
+}
+
+.portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
