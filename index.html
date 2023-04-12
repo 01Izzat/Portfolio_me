@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="./css/main.css" />
     <title>Portfolio</title>
     <!-- SWIPER CSS -->
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <!-- BOX ICONS -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -254,9 +257,9 @@
         <h2 class="heading">Valueble <span>Testimonial</span></h2>
 
         <div class="testimonial-wrapper">
-          <div class="testimonial-box">
-            <div class="testimonial-content">
-              <div class="testimonial-slide">
+          <div class="testimonial-box mySwiper">
+            <div class="testimonial-content swiper-wrapper">
+              <div class="testimonial-slide swiper-slide">
                 <img
                   src="./images/portret-1.avif"
                   width="400"
@@ -276,14 +279,14 @@
                   nostrum!
                 </p>
               </div>
-              <div class="testimonial-slide">
+              <div class="testimonial-slide swiper-slide">
                 <img
                   src="./images/portret-2.avif"
                   width="400"
                   height="350"
                   alt="img"
                 />
-                <h3>Jacson Levi</h3>
+                <h3>Flora Ocean</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consequuntur, impedit molestias. Totam fuga deleniti velit
@@ -296,14 +299,14 @@
                   nostrum!
                 </p>
               </div>
-              <div class="testimonial-slide">
+              <div class="testimonial-slide swiper-slide">
                 <img
                   src="./images/portret-3.jpg"
                   width="400"
                   height="350"
                   alt="img"
                 />
-                <h3>Jacson Levi</h3>
+                <h3>Frank Simon</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consequuntur, impedit molestias. Totam fuga deleniti velit
@@ -317,11 +320,17 @@
                 </p>
               </div>
             </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
     </main>
   </body>
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <!-- custom js -->
   <script src="./js/script.js"></script>
 </html>
