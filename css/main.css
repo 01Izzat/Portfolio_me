@@ -31,6 +31,12 @@ body{
   --shadow-color: rgba(0, 0, 0, .2);
 }
 
+/* #darkMode-icon */
+.dark-mode {
+  --bg-color: #0b061f;
+  --text-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, .7);
+}
 .header{
   width: 100%;
   display: flex;

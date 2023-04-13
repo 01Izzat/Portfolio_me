@@ -51,3 +51,11 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+//***********DARK LIGHT MODE************/
+let DarkModeIcon = document.querySelector('#darkMode-icon');
+
+DarkModeIcon.onclick = () => {
+  DarkModeIcon.classList.toggle('bx-sun');
+  document.body.classList.toggle('dark-mode');
+};
