@@ -35,7 +35,7 @@ body{
 .dark-mode {
   --bg-color: #0b061f;
   --text-color: #fdfdfd;
-  --shadow-color: rgba(0, 0, 0, .7);
+  --shadow-color: rgba(99, 89, 89, 0.7);
 }
 .header{
   width: 100%;
@@ -73,7 +73,13 @@ body{
 
 .header.sticky .navbar a{
   color: var(--text-color);
+  transition: .5s ease;
 }
+
+.header.sticky .navbar a:hover {
+  color:aqua;
+}
+
 
 .header.sticky .navbar a.active{
   color: var(--main-color);
@@ -425,15 +431,19 @@ span{
 
 .portfolio-box:hover .portfolio-layer {
   opacity: 1;
+  
 }
 
 .portfolio-layer h4 {
   font-size: 3rem;
+  color: rgb(32, 148, 137);
 }
 
 .portfolio-layer p {
   font-size: 1.6rem;
   margin: .3rem 0 1rem;
+  color: rgb(201, 207, 206);
+
 }
 
 .portfolio-layer a {
